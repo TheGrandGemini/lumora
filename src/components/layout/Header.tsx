@@ -38,7 +38,7 @@ export default function Header() {
 				onClose={() => setIsSidebarOpen(false)}
 			/>
 
-			<header className='flex items-center justify-between px-4 py-3 border-b border-border bg-base relative z-40'>
+			<header className='flex items-center lg:ml-56 justify-between px-4 py-3 border-b border-border bg-base relative z-40'>
 				{/* Left: Hamburger (mobile only) */}
 				<button
 					onClick={() => setIsSidebarOpen(true)}

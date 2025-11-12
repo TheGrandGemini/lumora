@@ -33,7 +33,7 @@ export const usePortfolioStore = create<PortfolioState>((set) => ({
 		{
 			name: 'Bitcoin',
 			symbol: 'BTC',
-			icon: '/icons/bitcoin.png',
+			icon: '/Tokens/BTC.png',
 			amount: 0.2,
 			value: 21460.98,
 			price: 107304.9,
@@ -42,7 +42,7 @@ export const usePortfolioStore = create<PortfolioState>((set) => ({
 		{
 			name: 'Ethereum',
 			symbol: 'ETH',
-			icon: '/icons/ethereum.png',
+			icon: '/Tokens/ETH.png',
 			amount: 2,
 			value: 7535.78,
 			price: 3762.89,
@@ -51,11 +51,11 @@ export const usePortfolioStore = create<PortfolioState>((set) => ({
 		{
 			name: 'BNB',
 			symbol: 'BNB',
-			icon: '/icons/bnb.png',
-			amount: 2,
+			icon: '/Tokens/DAI.png',
+			amount: 2000,
 			value: 2144,
-			price: 1072.08,
-			changePercent: 14.5,
+			price: 1.08,
+			changePercent: 0.15,
 		},
 	],
 	nfts: [

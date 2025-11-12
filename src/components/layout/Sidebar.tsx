@@ -8,7 +8,7 @@ import { CustomConnectButton } from '../UI/CustomConnectButton';
 
 const navItems = [
 	{ name: 'Portfolio', icon: PieChart, href: '/' },
-	{ name: 'Trade / Swap', icon: BarChart3, href: '/trade' },
+	{ name: 'Trade / Swap', icon: BarChart3, href: '/swap' },
 	{ name: 'Stake', icon: Layers, href: '/stake' },
 	{ name: 'History', icon: History, href: '/history' },
 ];

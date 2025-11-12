@@ -34,7 +34,7 @@ It helps users connect their wallets, view token balances, and manage their asse
 - **Name:** Lumora
 - **Description:** Real-time Web3 portfolio tracker for the modern user.
 - **Framework:** Next.js 14 + TypeScript
-- **Author:** [The Grand Gemini](https://x.com/TheGrandGemini)
+- **Author:** [The Grand Gemini](https://x.com/0xgemini0)
 - **License:** MIT
 
 ---
@@ -43,7 +43,7 @@ It helps users connect their wallets, view token balances, and manage their asse
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/lumora.git
+git clone https://github.com/thegrandgemini/lumora.git
 
 # Move into project folder
 cd lumora

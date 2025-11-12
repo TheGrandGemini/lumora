@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import { Inter, Space_Grotesk, DM_Mono } from 'next/font/google';
 import { Web3Provider } from '@/Providers/web3-providers';
 import { WalletSync } from '@/store/WalletSync';
+import Header from '@/components/layout/Header';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -95,6 +96,7 @@ export default function RootLayout({
 					disableTransitionOnChange>
 					<Web3Provider>
 						<WalletSync />
+						<Header />
 						{children}
 					</Web3Provider>
 				</ThemeProvider>
