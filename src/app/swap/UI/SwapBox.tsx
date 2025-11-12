@@ -24,25 +24,25 @@ const TOKENS: Token[] = [
 	{
 		symbol: 'ETH',
 		name: 'Ethereum',
-		logo: '/tokens/ETH.png',
+		logo: '/Tokens/ETH.png',
 		price: TOKEN_PRICES.ETH,
 	},
 	{
 		symbol: 'USDC',
 		name: 'USD Coin',
-		logo: '/tokens/USDC.png',
+		logo: '/Tokens/USDC.png',
 		price: TOKEN_PRICES.USDC,
 	},
 	{
 		symbol: 'DAI',
 		name: 'Dai',
-		logo: '/tokens/DAI.png',
+		logo: '/Tokens/DAI.png',
 		price: TOKEN_PRICES.DAI,
 	},
 	{
 		symbol: 'WBTC',
 		name: 'Wrapped BTC',
-		logo: '/tokens/BTC.png',
+		logo: '/Tokens/BTC.png',
 		price: TOKEN_PRICES.WBTC,
 	},
 ];
