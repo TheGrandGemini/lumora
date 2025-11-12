@@ -1,3 +1,4 @@
+// SwapModal.tsx
 'use client';
 
 import { Loader2, CheckCircle } from 'lucide-react';
@@ -45,6 +46,7 @@ export default function SwapModal({
 	const [scope, animate] = useAnimate<HTMLDivElement>();
 	const [isPresent, safeToRemove] = usePresence();
 
+	/* ---------- ENTER ANIMATION ---------- */
 	useEffect(() => {
 		if (!open || !isPresent || !buttonRef.current) return;
 
@@ -52,11 +54,13 @@ export default function SwapModal({
 		const fromX = rect.left + rect.width / 2 - window.innerWidth / 2;
 		const fromY = rect.top + rect.height / 2 - window.innerHeight / 2;
 
+		// 1. Set initial state instantly
 		animate(
 			scope.current,
 			{ scale: 0.6, x: fromX, y: fromY, opacity: 0, borderRadius: 24 },
 			{ duration: 0 }
 		).then(() => {
+			// 2. Animate to full size
 			animate(
 				scope.current,
 				{
@@ -75,7 +79,7 @@ export default function SwapModal({
 		});
 	}, [open, isPresent, buttonRef, animate, scope]);
 
-	/*  EXIT ANIMATION  */
+	/* ---------- EXIT ANIMATION ---------- */
 	useEffect(() => {
 		if (open || isPresent || !buttonRef.current) return;
 
@@ -132,10 +136,13 @@ export default function SwapModal({
 						onClick={handleClose}
 					/>
 
+					{/* MODAL CARD */}
 					<div
 						ref={scope}
 						className='relative bg-surface rounded-2xl p-6 max-w-sm w-full border border-border shadow-2xl'
-						style={{ originX: 0.5, originY: 0.5 }}
+						style={{
+							transformOrigin: '50% 50%', // Replaces originX/originY
+						}}
 						onClick={(e) => e.stopPropagation()}>
 						{/* CONFIRM */}
 						{stage === 'confirm' && (
