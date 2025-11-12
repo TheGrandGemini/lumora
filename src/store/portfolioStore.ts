@@ -84,7 +84,7 @@ export const usePortfolioStore = create<PortfolioState>((set) => ({
 			estValue: 8400,
 		},
 	],
-	balance: 31140.76 + 32600, // token + nft combined value
+	balance: 31140.76 + 32600,
 	change: 5100.55,
 	changePercent: 9.7,
 	setTokens: (tokens) => set({ tokens }),

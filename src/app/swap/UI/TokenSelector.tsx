@@ -10,10 +10,10 @@ type Token = {
 };
 
 const TOKENS: Token[] = [
-	{ symbol: 'ETH', name: 'Ethereum', logo: '/tokens/ETH.png' },
-	{ symbol: 'USDC', name: 'USD Coin', logo: '/tokens/USDC.png' },
-	{ symbol: 'DAI', name: 'Dai', logo: '/tokens/DAI.png' },
-	{ symbol: 'WBTC', name: 'Wrapped BTC', logo: '/tokens/BTC.png' },
+	{ symbol: 'ETH', name: 'Ethereum', logo: '/Tokens/ETH.png' },
+	{ symbol: 'USDC', name: 'USD Coin', logo: '/Tokens/USDC.png' },
+	{ symbol: 'DAI', name: 'Dai', logo: '/Tokens/DAI.png' },
+	{ symbol: 'WBTC', name: 'Wrapped BTC', logo: '/Tokens/BTC.png' },
 ];
 
 export default function TokenSelector({
